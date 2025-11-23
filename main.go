@@ -61,6 +61,10 @@ func main() {
 }
 
 // interface seria uma variavel que desejamos utilizar qualquer tipo
+// Func para verificar o tipo de uma variavel
+// Não podemos usar fallthrough em type switch
+// porque: obviamente uma variavel é so um tipo de dado (um inteiro não pode ser um boolean!)
+// error: cannot fallthrough in type switch
 func checkType(x interface{}) {
 	switch x.(type) {
 	case int:
