@@ -69,12 +69,16 @@ func checkType(x interface{}) {
 	switch x.(type) {
 	case int:
 		fmt.Println(("Its a integer"))
+	case int32:
+		fmt.Println("Its a int32")
 	case float64:
 		fmt.Println("Its a float64")
 	case float32:
 		fmt.Println("Its a float32")
 	case string:
 		fmt.Println("Its a string")
+	case uint:
+		fmt.Println("Its a unsigned int")
 	default:
 		fmt.Println("Unknown type")
 	}
