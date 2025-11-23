@@ -67,17 +67,17 @@ func main() {
 // error: cannot fallthrough in type switch
 func checkType(x interface{}) {
 	switch x.(type) {
-	case int:
+	case int: // Uma entidade única
 		fmt.Println(("Its a integer"))
-	case int32:
+	case int32: // Outra entidade única
 		fmt.Println("Its a int32")
-	case float64:
+	case float64: // ...
 		fmt.Println("Its a float64")
-	case float32:
+	case float32: // ...
 		fmt.Println("Its a float32")
-	case string:
+	case string: // ...
 		fmt.Println("Its a string")
-	case uint:
+	case uint: // ...
 		fmt.Println("Its a unsigned int")
 	default:
 		fmt.Println("Unknown type")
