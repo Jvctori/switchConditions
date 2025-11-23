@@ -5,6 +5,9 @@ import (
 	"math"
 )
 
+// O if e else é recomendavel usar apenas quando são poucas expressões...
+// 1 ou 2 expressões, acima disso use switch
+
 func main() {
 	fruit := "Tv"
 	switch fruit {
